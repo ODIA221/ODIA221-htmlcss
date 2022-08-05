@@ -1,0 +1,39 @@
+body
+{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: red;
+}
+h1
+{
+    text-align: center;
+    color: white;
+}
+
+.bloc1
+{
+   display: flex;
+  
+   
+}
+.para
+{
+   border: 1,5px solid red; 
+   width: 100%;
+   height: 180px;
+   background: whitesmoke;
+   text-align: center;
+   font-weight: bold;
+   margin: 1%;
+
+}
+p
+{
+    transform: rotate(90deg);
+    color: red;
+}
+
+
+
+
+
