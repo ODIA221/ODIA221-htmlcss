@@ -1,42 +1,172 @@
+ /* @media screen and (max-width: 700px) {
+   
+}  */
+
+
+ /*le corp des bloc*/ 
+
 body
 {
     
     font-family: Arial, Helvetica, sans-serif;
-    background-color: red;
-}
-h1
-{
-    text-align: center;
-    color: white;
+    background-color: whitesmoke;
+    margin: 0%;
 }
 
-.bloc1
+/*top menu*/
+
+#topMneu
+{
+    background-color: gray;
+    height: 30px;
+}
+.top
+{
+    text-align: center;
+    font-size: large;
+    color: #ffffff;
+}
+/*titre avant bloc*/
+
+.titre
+{
+    text-align: center;
+    font-size: large;
+    color: gray;
+    margin: 0%;
+    
+}
+
+/*bloc principal*/
+
+.bloc
 {
    display: flex;
   
    
 }
+/*paragraphe */
 .para
 {
    border: 1,5px solid red; 
    width: 100%;
    height: 180px;
-   background: whitesmoke;
+   background: burlywood;
    text-align: center;
    font-weight: bold;
-   margin: 1%;
+   margin: 8px;
   
-
-
 }
-p
+/*paragraphe en verticalo*/
+.tourn
 {
     transform: rotate(90deg);
-    color: red;
-    font-size: 50px;
+    color:  white;
+    font-size: larger;
+    text-align: center;
+    font-weight: 40px;
+}  
+/*btn change coleur*/
+#btnCol
+{
+    border-radius: 100%;
+    margin-left: 47%;
+    margin-right: 47%;
 }
 
+/************************* le  formulaire **************************/
+/*pied de page*/
+#pied
+{
+    background-color: gray;
+    height: 30px;
+}
+/*titre contact*/
+#titreContact
+{
+    background-color: burlywood;
+    color: #ffffff;
+}
+/*btn enveoi annuler*/
+.btnSend
+{
+    background-color: burlywood;
+    color: black;
+}
+/*indicateur de champ obligatoire*/
+
+.champObligatoir
+{
+    color: red;
+}
+
+/*ajustement form*/
+#contact {
+    margin: 0 auto;
+    width: 29%;
+  }
+  #contact input {
+    padding: 5px;
+  }
+  #contact select {
+    background-color: #ffffff;
+    padding: 5px;
+  }
+  #contact textarea {
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  #contact label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
 
 
 
 
+/* .maForm
+{
+    border: solid white;
+    height: 15%;
+    width: 24%;
+
+/* 
+
+} */
+
+/* #formulaire
+{
+    margin-left: 47%;
+    margin-right: 47%;
+
+
+}
+
+.meslabel
+{
+    color: black;
+    font-weight: bold;
+   
+    
+    
+
+}
+
+.champObligatoir
+{
+    color: red;
+}
+.inputForm
+{
+   background-color: black;
+   color: white;
+   font-weight: 40px;
+
+}  */
+/* #btnForm 
+{
+    font-weight: bold;
+    color: white;
+    background-color: black;
+} */

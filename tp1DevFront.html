@@ -2,27 +2,85 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tp1_omar</title>
-    <link rel="stylesheet" href="tp1DevFront.css">
+    <link rel="stylesheet" type="text/css" href="tp1DevFront.css">
+
 </head>
 <body>
+    <div id="topMneu">
+        <p class="top">O'DIA CORP </p>
+
+    </div>
     <header>
-        <div>
-            <img src="/home/odia/Documents/gitOdia/devFront/imgApprenantSimplon.png" 
+        <div id="tof">
+            <img src="imgs/imgApprenantSimplon.png" 
             alt="Simplon" width=100% height=150px>
         </div>
 
     </header>
     <main>
-        <h1>Mon Premier TP : Oumar DIAGNE</h1>
-        <div class="bloc1">
-                <div class = "para"><p> Bloc 1</p></div>
-                <div class = "para"><p>Bloc 2</p> </div>
-        </div>
-        <div class="bloc1">
-            <div class = "para"> <p>Bloc 3</p> </div>
-            <div class = "para"> <p> Bloc 4</p></div>
-        </div>
+        <h2 class="titre">Mon Premier TP : Oumar DIAGNE</h1>
+            <div class="bloc">
+                <div class = "para" id="btn"><p class="tourn" id="txt"> Bloc1</p></div>
+                <div class = "para" id="btn1"><p class="tourn" id="txt1">Bloc2</p> </div>
+            </div>
+            <div class="bloc">
+                <div class = "para" id="btn2"> <p class="tourn" id="txt2">Bloc3</p> </div>
+                <div class = "para" id="btn3"> <p class="tourn" id="txt3">Bloc4</p></div>
+            </div>
+        <button onclick="changeColor()" id="btnCol"> <img src="imgs/peintre.png" alt="cnger couleur"></button>
     </main>  
+
+    <!--fromulaire---------------------------------------------------------------------------->
+
+
+    <hr>
+    <div id="contact">
+        <div id="titreContact">
+            <h2  class="titre" >Formulaire de Contact</h2>
+        </div>
+        <form name="formulaire" action="" onclick="return controlSaisie()" method="post" class="formulaire">
+        <div>
+            <label for="Nom"> Nom et prénom :<span class="champObligatoir"> * </span></label>
+            <input type="text" id="nom" size="40" name="nom" />
+        </div>
+        <br />
+        <div>
+            <label for="Téléphone">Téléphone  : <span class="champObligatoir"> * </span>  </label>
+            <input type="text" id="telephone" size="40" name="telephone" />
+        </div>
+        <br />
+        <div>
+            <label for="E-mail" > Adresse électronique : <span class="champObligatoir"> * </span> </label>
+            <input type="email" id="mail" size="40" name="mail" />
+        </div>
+        <br />
+        <div>
+            <label for="adresse">  Objet : <span class="champObligatoir"> * </span> </label>
+            <input type="text" id="objet" size="40" name="objet" />
+        </div>
+        <br />
+        <div>
+            <label for="commentaire">  Commentaires  : </label>
+            <textarea cols="50" id="message" rows="10" name="message"></textarea>
+        </div>
+        <div class="buttons">
+            <input type="button" value="Envoyer" class="btnSend" id="boutton" onclick="afficherInput()" />
+            <input type="reset" value="Annuler" name="Annuler" class="btnSend"/>
+        </div>
+        <!---->
+
+        <textarea cols="50" id="afficheur" name="afficheur" rows="10" ></textarea>
+
+        <!---->
+
+    </div>
+  
+    <footer id="pied">
+        <p class="top"> Copirigth © O'DIA CORP 2022</p>
+    </footer>
+
+    <script type="text/javascript" src="tp1DevFront.js"></script>
 </body>
 </html>
